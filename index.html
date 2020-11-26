@@ -2,6 +2,7 @@
   <head>
     <title></title>
     <meta content="">
+    <link rel=StyleSheet href="css.css" type="text/css">
     <style></style>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -9,33 +10,67 @@
   </head>
   <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="index.html">Zheng Xia<br/>MiWeb</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="contenido/CV.html">Curriculum Vitae</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link" href="contenido/2.html">Mi lista de deseos para Navidad</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
+          Mis aficiones
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="contenido/Dormir.html">Dormir</a>
+          <a class="dropdown-item" href="contenido/Comer.html">Comer</a>
+          <a class="dropdown-item" href="contenido/Juegos.html">Juegos de móvil</a>
+          <a class="dropdown-item" href="contenido/M%C3%BAsica.html">Música que escucho</a>
         </div>
       </li>
     </ul>
   </div>
 </nav>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="contenido/Dormir.html"><img src="Images/GatoDurmiendo.jpg" class="d-block w-100" alt="..."></a>
+    </div>
+    <div class="carousel-item">
+      <a href="contenido/Comer.html"><img src="Images/Comida.jpg" class="d-block w-100" alt="..."></a>
+    </div>
+    <div class="carousel-item">
+      <a href="contenido/Juegos.html"><img src="Images/BrawlStars.jpg" class="d-block w-100" alt="..."></a>
+      </div>
+    <div class="carousel-item">
+      <a href="contenido/M%C3%BAsica.html"><img src="Images/D%C3%ADaSexto.jpg" class="d-block w-100" alt="..."></a>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+      <p>Mi profesor de aplicaciones web me ha pedido una página web tochisima, asi que bueno por eso estaís leyendo esto.</p>
+      <p>Con esta página web podreís, aparte de calificarme, saber más de mí, mis gustos, aficiones, que tipo de música escucho o ver mi curriculum.</p>
+      
   </body>
 </html>
