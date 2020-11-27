@@ -1,4 +1,4 @@
-p {
+p, h3 {
     width: 100%;
     padding-left: 1em;
     padding-right: 1em;
@@ -9,4 +9,88 @@ iframe.youtube {
     width: 100%;
     justify-items: center;
     padding: 1em;
+}
+
+p::first-letter {
+    font-size: 1.5em;
+}
+
+#pie {
+    background-color: #333;
+    list-style-type: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.pie {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.pie a {
+    padding: 10px 16px;
+    display: block;
+    color: white;
+}
+
+#cabecera {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: lightgray;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:1;
+}
+
+li.cabecera {
+    list-style-type: none;
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 12px;
+    text-decoration: none;
+}
+
+li a:hover:not(.MiWeb) {
+    background-color: #eadcd9;
+    color: black;
+    text-decoration: none;
+}
+
+li a.MiWeb:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.MiWeb {
+    background-color: red;
+}
+
+#carouselExampleIndicators {
+    z-index:0;
+}
+
+.carrusel {
+    text-align: center;
+    background-color: aquamarine;
+}
+
+@media only screen and (max-width: 500px) {
+    .pie a {
+        font-size: 0,8em;
+    }
+}
+
+@media only screen and (min-width: 501px) {
+    .pie a {
+        font-size: 1em;
+    }
 }
