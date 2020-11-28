@@ -64,7 +64,7 @@ li a {
 }
 
 li a:hover:not(.MiWeb) {
-    background-color: #eadcd9;
+    background-color: skyblue;
     color: black;
     text-decoration: none;
 }
@@ -87,13 +87,116 @@ li a.MiWeb:hover {
     background-color: aquamarine;
 }
 
-a img {
+.i-carrusel {
     height: 300px;
     width: 600px;
-    display:block;
-    margin:auto;
+    display: block;
+    margin: auto;
 }
 
 #mapa {
     padding-bottom: 10px;
 }
+
+div h1 {
+    margin: 0;
+}
+
+#titulo-CV {
+    margin: 
+}
+
+#patron {
+    width: 100%;
+    height: 125px;
+}
+#cabecera-cv {
+    position: relative;
+    display: inline-block;
+}
+
+#titulo-cv {
+    position: absolute;
+    top: 16px;
+    left: 25%;
+    font-size: 3em;
+    color: darkblue;
+}
+
+#fotocv {
+    position: absolute;
+    top: 15px;
+    left 7%;
+    width: 90px;
+    height: 90px;
+}
+
+#contenido-cv {
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+
+/*Media query*/
+
+
+
+
+@media (min-width:890px){
+    .i-carrusel {
+        height: 400px;
+        width: 800px;
+    }
+    
+    #patron {
+       width: 160%; 
+    }
+}
+
+@media (min-width:451px) and (max-width:650px) {
+    
+    .i-carrusel {
+        height: 200px;
+        width: 400px;
+    }
+    
+    #cabecera {
+        justify-content: space-around;  
+        margin: 0;
+        padding: 0;
+    }
+    
+    li.cabecera {
+        float: none;
+    }
+    
+    .carrusel, #cabecera-cv {
+        margin-top: 105px;
+    }
+}
+
+@media (max-width:450px){
+   
+    h1.carrusel {
+        font-size: 2em;
+    }
+    .i-carrusel {
+        height: 150px;
+        width: 300px;
+    }
+    
+    #cabecera {
+        justify-content: space-around;  
+        margin: 0;
+        padding: 0;
+    }
+    
+    li.cabecera {
+        float: none;
+    }
+    
+    .carrusel, #cabecera-cv {
+        margin-top: 105px;
+    }
+}
+
