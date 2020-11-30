@@ -137,6 +137,7 @@ div h1 {
 
 div.lista {
     clear: both;
+    overflow: auto;
 }
 
 div.lista p {
@@ -152,24 +153,34 @@ iframe.lista {
 td img {
     width: 150px;
     height: 150px;
-    padding: 10 10 10 10;
+    padding: 10px;
+}
+
+table#tabla-juegos,  table#tabla-juegos td, table#tabla-juegos th, table#tabla-juegos tr{
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding-left: 10px;
 }
 
 #tabla-juegos {
-    border-collapse: collapse;
-    border: 1px black;
-    padding-left: 10px;
-    
+    margin: 10px;
 }
+
+h4.musica {
+    color: red;
+}
+
+
+
+
+
+
+
+
 
 /*Media query*/
 
-.i-carrusel:hover {
-    
-}
-s
-
-@media (min-width:890px){
+@media (min-width:890px) {
     .i-carrusel {
         height: 400px;
         width: 800px;
@@ -197,7 +208,7 @@ s
         float: none;
     }
     
-    .carrusel, #cabecera-cv, #titulo-lista {
+    .carrusel, #cabecera-cv, #titulo-lista, #titulo-musica {
         margin-top: 105px;
     }
     
@@ -227,7 +238,7 @@ s
         float: none;
     }
     
-    .carrusel, #cabecera-cv, #titulo-lista, #titulo-juegos {
+    .carrusel, #cabecera-cv, #titulo-lista, #titulo-juegos, #titulo-musica {
         margin-top: 105px;
     }
     
